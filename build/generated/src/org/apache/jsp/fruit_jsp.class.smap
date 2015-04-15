@@ -1,0 +1,15 @@
+SMAP
+fruit_jsp.java
+JSP
+*S JSP
+*F
++ 0 fruit.jsp
+fruit.jsp
+*L
+5,7:45
+11,5:52
+16:57,3
+17,15:60
+32:75,3
+33,19:78
+*E

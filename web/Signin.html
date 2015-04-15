@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="CSS/Signin.css" rel="stylesheet" type="text/css" />
+<title>Login</title>
+<script language="javascript">
+function doCheck(){
+    if(document.form1.eMail.value===""){
+        alert('Please input your e-Mail！');
+        return false;
+    }
+    if(document.form1.password.value===""){
+        alert('Please input your password');
+        return false;
+    }
+    return falese;
+}
+</script>
+</head>
+
+<body>
+<div class="header">
+	<div class="logo">
+		<a href="index.jsp" alt="Home page"><img alt="X-Learning" src="icon/xl-13.png" height="80%" style="margin-top: 0.4em;" /></a>
+    </div>
+</div>
+<main>
+<div class="contain">
+<form action="Signin" method="post" name="signin" id="form1" onimage="doCheck()">
+<div class="row">
+    <div class="box" id="left">
+    <p>EMAIL</p>
+    </div>
+    <div class="box" id="right">
+        <input type="email" name="eMail" id="eMail" placeholder="   ****@EMAIL.COM" size="35"
+            maxlength="40" style="height:2em; font-family:'Courier New', Courier, monospace; font-size:0.7em" autofocus="autofocus" />
+        <label for="eMail"></label>       
+    </div>
+</div>
+<div class="row">
+    <div class="box" id="left">
+    <p>PASSWORD</p>
+    </div>
+    <div class="box" id="right">
+    	<input type="password" name="password" id="password" placeholder="   8 characters" size="35"
+                maxlength="8" style="height:2em; font-family:'Courier New', Courier, monospace; font-size:0.7em" autofocus="autofocus" />
+        <label for="password"></label>     
+    </div>
+</div>
+<div class="submitbn">
+    	<input name="singin" type="image" id="singin" src="icon/button_signin.png" width="110px"/>
+        	
+</div>
+</form>
+<p class="small">Haven't  <b><a href="Register.jsp">Registered</a></b> ?</p>
+</div>
+</main>
+</body>
+</html>
